@@ -12,9 +12,18 @@ function getRandomFloat(min, max, decimals) {
 
 function generateRandomData() {
   const paymentGateway = {
-    paypal: getRandomInt(-3000, 3000),
-    craditcard: getRandomInt(-3000, 3000),
-    paytm: getRandomInt(-3000, 3000),
+    paypal: {
+      value: getRandomInt(-3000, 3000),
+      discription: "Big Brands",
+    },
+    craditcard: {
+      value: getRandomInt(-3000, 3000),
+      discription: "Bill Payment",
+    },
+    wallet: {
+      value: getRandomInt(-3000, 3000),
+      discription: "Bill Payment",
+    },
   };
 
   const activeUser = {
